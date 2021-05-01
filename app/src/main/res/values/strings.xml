@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Edukasi Komputer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_1sistemkomputer">Yang dimakud dengan Sistem Komputer adalah kumpulan perangkat-perangkat komputer yang saling berhubungan dan berinteraksi satu sama lain untuk melakukan proses pengolahan data</string>
+    <string name="penjelasan_sistem_komputer">Penjelasan Sistem komputer</string>
+    <string name="text2sistemkomputer">Perangkat yang terdapat pada sistem komputer diantaranya hardware, software dan brainware. Berikut adalah gambarnya:</string>
+    <string name="text3sk">Perangkat-perangkat tersebut memiliki fungsinya masing-masing pada sistem komputer. Namun saat beroperasinya perangkat-perangkat komputer tersebut akan bekerja saling mendukung satu sama lain. Hardware tidak akan berfungsi tanpa adanya software dan juga sebaliknya, dan keduanya tidak bermanfaat untuk menghasilkan informasi jika tidak ada brainware yang mengoperasikan dan memberikan perintah. Jadi dapat dikatakan bahwa komputer bukan sebuah alat saja tetapi juga merupakan sebuah sistem</string>
+    <string name="a_hardware_perangkat_keras">a. Hardware (Perangkat Keras)</string>
 </resources>

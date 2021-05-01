@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wa.dev.edukasikomputer">
-
+        <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EdukasiKomputer">
-        <activity android:name=".PerangkatProses"></activity>
+        <activity android:name=".Yutubquerty"/>
+        <activity android:name=".PrinterAct" />
+        <activity android:name=".MonitorAct" />
+        <activity android:name=".SejarahPenemuanKomputer" />
+        <activity android:name=".SistemKomputer" />
+        <activity android:name=".PerangkatProses" />
         <activity android:name=".PerangkatKeluaran" />
         <activity android:name=".PerangkatMasukan" />
         <activity android:name=".HardwareKomputer" />
