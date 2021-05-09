@@ -1,8 +1,10 @@
-package com.wa.dev.edukasikomputer;
+package com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatKeluaran;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.wa.dev.edukasikomputer.R;
 
 public class PrinterAct extends AppCompatActivity {
 

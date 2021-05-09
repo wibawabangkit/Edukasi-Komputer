@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/bg"
-    tools:context=".PerangkatProses">
+    tools:context=".BelajarKomputer.HardwareKomputer.PerangkatProses.PerangkatProses">
     <ImageView
         android:id="@+id/title"
         android:layout_width="wrap_content"

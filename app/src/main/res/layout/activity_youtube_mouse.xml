@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.Yutubquerty">
+    tools:context=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.YoutubeMouse">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/title_key"/>
+        android:src="@drawable/title_mouse"/>
     <WebView
-        android:id="@+id/key"
+        android:id="@+id/mouseyu"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
 </LinearLayout>

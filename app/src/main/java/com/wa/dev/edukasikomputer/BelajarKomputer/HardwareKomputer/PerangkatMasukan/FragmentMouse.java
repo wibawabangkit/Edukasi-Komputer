@@ -1,4 +1,4 @@
-package com.wa.dev.edukasikomputer;
+package com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatMasukan;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,7 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-public class FragmentKeyboard extends Fragment {
+import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.HardwareKomputer;
+import com.wa.dev.edukasikomputer.R;
+
+
+public class FragmentMouse extends Fragment {
     ImageView btn, yt;
     Context context;
     @Override
@@ -23,24 +27,25 @@ public class FragmentKeyboard extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_keyboard, container, false);
+        View view = inflater.inflate(R.layout.fragment_mouse, container, false);
         context = getContext();
-        btn = view.findViewById(R.id.btn_balik);
+        btn = view.findViewById(R.id.btn_balik_mouse);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent a = new Intent(context, HardwareKomputer.class);
                 startActivity(a);
+                getActivity().finish();
             }
         });
-         yt = view.findViewById(R.id.pindahyutub);
-         yt.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-                 Intent a = new Intent(context, Yutubquerty.class);
-                 startActivity(a);
-             }
-         });
+        yt = view.findViewById(R.id.pindahyutub_mouse);
+        yt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(context, YoutubeMouse.class);
+                startActivity(a);
+            }
+        });
 
 
         return view;

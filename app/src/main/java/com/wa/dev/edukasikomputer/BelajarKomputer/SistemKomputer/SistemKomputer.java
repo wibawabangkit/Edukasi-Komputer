@@ -1,18 +1,19 @@
-package com.wa.dev.edukasikomputer;
+package com.wa.dev.edukasikomputer.BelajarKomputer.SistemKomputer;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
+
+import com.wa.dev.edukasikomputer.MenuKe2;
+import com.wa.dev.edukasikomputer.R;
 
 public class SistemKomputer extends AppCompatActivity {
     ImageView uih;

@@ -1,4 +1,4 @@
-package com.wa.dev.edukasikomputer;
+package com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatKeluaran;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.wa.dev.edukasikomputer.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link FragmentMouse#newInstance} factory method to
+ * Use the {@link FragmentPrinter3#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentMouse extends Fragment {
+public class FragmentPrinter3 extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class FragmentMouse extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public FragmentMouse() {
+    public FragmentPrinter3() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class FragmentMouse extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment FragmentMouse.
+     * @return A new instance of fragment FragmentPrinter3.
      */
     // TODO: Rename and change types and number of parameters
-    public static FragmentMouse newInstance(String param1, String param2) {
-        FragmentMouse fragment = new FragmentMouse();
+    public static FragmentPrinter3 newInstance(String param1, String param2) {
+        FragmentPrinter3 fragment = new FragmentPrinter3();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,6 @@ public class FragmentMouse extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mouse, container, false);
+        return inflater.inflate(R.layout.fragment_printer3, container, false);
     }
 }

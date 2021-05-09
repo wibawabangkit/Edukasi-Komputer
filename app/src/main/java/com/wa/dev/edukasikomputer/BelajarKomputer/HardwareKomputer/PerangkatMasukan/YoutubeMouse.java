@@ -1,4 +1,4 @@
-package com.wa.dev.edukasikomputer;
+package com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatMasukan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,14 +8,16 @@ import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class Yutubquerty extends AppCompatActivity {
+import com.wa.dev.edukasikomputer.R;
+
+public class YoutubeMouse extends AppCompatActivity {
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_yutubquerty);
-        WebView web=(WebView)findViewById(R.id.key);
+        setContentView(R.layout.activity_youtube_mouse);
+        WebView web=(WebView)findViewById(R.id.mouseyu);
         web.getSettings().setJavaScriptEnabled(true);
 
         web.setWebViewClient(new WebViewClient(){
@@ -27,7 +29,7 @@ public class Yutubquerty extends AppCompatActivity {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-        web.loadUrl("https://youtu.be/39WiYZmH3lM");
+        web.loadUrl("https://youtu.be/aBSrF0_RTas");
 
     }
 

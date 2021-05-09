@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wa.dev.edukasikomputer">
-        <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,17 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EdukasiKomputer">
-        <activity android:name=".Yutubquerty"/>
-        <activity android:name=".PrinterAct" />
-        <activity android:name=".MonitorAct" />
-        <activity android:name=".SejarahPenemuanKomputer" />
-        <activity android:name=".SistemKomputer" />
-        <activity android:name=".PerangkatProses" />
-        <activity android:name=".PerangkatKeluaran" />
-        <activity android:name=".PerangkatMasukan" />
-        <activity android:name=".HardwareKomputer" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.YoutubeMouse"></activity>
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.Yutubquerty" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.PrinterAct" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.MonitorAct" />
+        <activity android:name=".BelajarKomputer.DefinisiKomputer.SejarahPenemuanKomputer" />
+        <activity android:name=".BelajarKomputer.SistemKomputer.SistemKomputer" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.PerangkatProses" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.PerangkatKeluaran" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.PerangkatMasukan" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.HardwareKomputer" />
         <activity android:name=".About" />
-        <activity android:name=".DefinisiKomputer" />
+        <activity android:name=".BelajarKomputer.DefinisiKomputer.DefinisiKomputer" />
         <activity android:name=".MenuKe2" />
         <activity android:name=".Splashscreen">
             <intent-filter>

@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.wa.dev.edukasikomputer.BelajarKomputer.DefinisiKomputer.DefinisiKomputer;
+import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.HardwareKomputer;
+import com.wa.dev.edukasikomputer.BelajarKomputer.SistemKomputer.SistemKomputer;
+
 public class MenuKe2 extends AppCompatActivity {
 ImageView definisikomputer, hardware, kembali, sistemkomputer;
     @Override

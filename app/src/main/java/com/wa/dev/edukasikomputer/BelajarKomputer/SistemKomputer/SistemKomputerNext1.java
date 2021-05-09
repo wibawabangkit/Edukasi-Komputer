@@ -1,4 +1,4 @@
-package com.wa.dev.edukasikomputer;
+package com.wa.dev.edukasikomputer.BelajarKomputer.SistemKomputer;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.wa.dev.edukasikomputer.MenuKe2;
+import com.wa.dev.edukasikomputer.R;
 
 
 public class SistemKomputerNext1 extends Fragment {

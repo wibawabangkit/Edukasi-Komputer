@@ -1,12 +1,17 @@
-package com.wa.dev.edukasikomputer;
+package com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatMasukan.PerangkatMasukan;
+import com.wa.dev.edukasikomputer.MenuKe2;
+import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatKeluaran.PerangkatKeluaran;
+import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatProses.PerangkatProses;
+import com.wa.dev.edukasikomputer.R;
 
 public class HardwareKomputer extends AppCompatActivity {
     ImageView masuk, proses, keluar, kembali;
