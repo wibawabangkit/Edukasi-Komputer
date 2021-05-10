@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EdukasiKomputer">
-        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.YoutubeMouse"></activity>
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.YoutubeMouse"/>
         <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.Yutubquerty" />
         <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.PrinterAct" />
         <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.MonitorAct" />
@@ -23,6 +23,7 @@
         <activity android:name=".BelajarKomputer.HardwareKomputer.HardwareKomputer" />
         <activity android:name=".About" />
         <activity android:name=".BelajarKomputer.DefinisiKomputer.DefinisiKomputer" />
+        <activity android:name=".BelajarKomputer.DefinisiKomputer.DefinisiKomputerMenurutAhli" />
         <activity android:name=".MenuKe2" />
         <activity android:name=".Splashscreen">
             <intent-filter>
