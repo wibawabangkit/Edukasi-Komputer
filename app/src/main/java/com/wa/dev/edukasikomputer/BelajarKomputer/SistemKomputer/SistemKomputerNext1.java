@@ -34,6 +34,7 @@ public class SistemKomputerNext1 extends Fragment {
             public void onClick(View v) {
                 Intent a = new Intent(mcontext, MenuKe2.class);
                 startActivity(a);
+                getActivity().finish();
             }
         });
         return view;
