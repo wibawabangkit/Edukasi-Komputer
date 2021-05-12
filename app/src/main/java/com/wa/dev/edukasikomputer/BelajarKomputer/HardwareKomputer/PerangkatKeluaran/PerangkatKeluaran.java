@@ -39,7 +39,7 @@ public class PerangkatKeluaran extends AppCompatActivity {
                 layopsi.setVisibility(View.VISIBLE);
                 FragmentManager fm = getSupportFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfrag, new FragmentSpeaker());
+                ft.replace(R.id.layfragke, new FragmentSpeaker());
                 ft.commit();
             }
         });
@@ -51,7 +51,7 @@ public class PerangkatKeluaran extends AppCompatActivity {
                 layopsi.setVisibility(View.VISIBLE);
                 FragmentManager fm = getSupportFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfrag, new FragmentMonitor1());
+                ft.replace(R.id.layfragke, new FragmentMonitor1());
                 ft.commit();
             }
         });
@@ -63,7 +63,7 @@ public class PerangkatKeluaran extends AppCompatActivity {
                 layopsi.setVisibility(View.VISIBLE);
                 FragmentManager fm = getSupportFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfrag, new FragmentPrinter1());
+                ft.replace(R.id.layfragke, new FragmentPrinter1());
                 ft.commit();
             }
         });
@@ -75,7 +75,7 @@ public class PerangkatKeluaran extends AppCompatActivity {
                 layopsi.setVisibility(View.VISIBLE);
                 FragmentManager fm = getSupportFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfrag, new FragmentProjector());
+                ft.replace(R.id.layfragke, new FragmentProjector());
                 ft.commit();
             }
         });

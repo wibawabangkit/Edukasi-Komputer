@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/konten_proyektor"/>
             <ImageView
-                android:id="@+id/vid_monitor"
+                android:id="@+id/vid_pro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/vid_proyektor"/>

@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EdukasiKomputer">
-        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.PenaElektronik"></activity>
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.YTProjektor"></activity>
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.YTSpeaker" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.YTPrinter" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.YTMonitor" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.PenaElektronik" />
         <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.YT_mic" />
         <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.TouchYoutube" />
         <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.YoutubeMouse" />

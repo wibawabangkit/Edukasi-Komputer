@@ -30,23 +30,23 @@ public class FragmentSpeaker extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_speaker, container, false);
         context = getContext();
-//        btn = view.findViewById(R.id.bt_back_mic);
-//        btn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent a = new Intent(context, HardwareKomputer.class);
-//                startActivity(a);
-//                getActivity().finish();
-//            }
-//        });
-//        yt = view.findViewById(R.id.vid_mic);
-//        yt.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent a = new Intent(context, YT_mic.class);
-//                startActivity(a);
-//            }
-//        });
+        btn = view.findViewById(R.id.btnn_back);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(context, HardwareKomputer.class);
+                startActivity(a);
+                getActivity().finish();
+            }
+        });
+        yt = view.findViewById(R.id.vid_speaker);
+        yt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(context, YT_mic.class);
+                startActivity(a);
+            }
+        });
 
 
         return view;
