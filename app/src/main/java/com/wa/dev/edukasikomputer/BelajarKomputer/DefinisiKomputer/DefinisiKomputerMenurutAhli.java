@@ -26,4 +26,11 @@ ImageView kembali;
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(DefinisiKomputerMenurutAhli.this, MenuKe2.class);
+        startActivity(a);
+        finish();
+    }
 }

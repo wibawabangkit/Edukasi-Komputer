@@ -122,4 +122,11 @@ public class PerangkatProses extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent a = new Intent(PerangkatProses.this, HardwareKomputer.class);
+        startActivity(a);
+        finish();
+    }
 }

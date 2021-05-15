@@ -23,4 +23,11 @@ public class About extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(About.this, MainActivity.class);
+        startActivity(a);
+        finish();
+    }
 }

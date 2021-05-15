@@ -12,6 +12,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import com.wa.dev.edukasikomputer.BelajarKomputer.SistemKomputer.SistemKomputer;
 import com.wa.dev.edukasikomputer.BelajarKomputer.SistemKomputer.SistemKomputerNext1;
 import com.wa.dev.edukasikomputer.MenuKe2;
 import com.wa.dev.edukasikomputer.R;
@@ -65,5 +66,12 @@ public class DefinisiKomputer extends AppCompatActivity {
                 finish();
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(DefinisiKomputer.this, MenuKe2.class);
+        startActivity(a);
+        finish();
     }
 }

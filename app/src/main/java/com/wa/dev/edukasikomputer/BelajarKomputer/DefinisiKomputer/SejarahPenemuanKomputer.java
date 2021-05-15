@@ -26,4 +26,11 @@ public class SejarahPenemuanKomputer extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(SejarahPenemuanKomputer.this, MenuKe2.class);
+        startActivity(a);
+        finish();
+    }
 }

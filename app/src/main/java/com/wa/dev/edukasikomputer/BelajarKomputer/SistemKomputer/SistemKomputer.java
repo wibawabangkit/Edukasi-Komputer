@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.HardwareKomputer;
 import com.wa.dev.edukasikomputer.MenuKe2;
 import com.wa.dev.edukasikomputer.R;
 
@@ -50,5 +51,12 @@ public class SistemKomputer extends AppCompatActivity {
 
 
 
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(SistemKomputer.this, MenuKe2.class);
+        startActivity(a);
+        finish();
     }
 }
