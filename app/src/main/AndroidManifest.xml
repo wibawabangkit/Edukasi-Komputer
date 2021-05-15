@@ -11,7 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EdukasiKomputer">
-        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.YTProjektor"></activity>
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.YTRAM"></activity>
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.YTStorage" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.YTVGA" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.YTPSU" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.YTCDROM" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.YTProsesor" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.YTMotherboard" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.YTProjektor" />
         <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.YTSpeaker" />
         <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.YTPrinter" />
         <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.YTMonitor" />
