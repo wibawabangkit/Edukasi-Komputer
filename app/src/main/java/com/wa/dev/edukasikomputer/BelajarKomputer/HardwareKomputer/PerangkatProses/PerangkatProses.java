@@ -10,11 +10,9 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.ScrollView;
 
 import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.HardwareKomputer;
-import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatKeluaran.FragmentProjector;
-import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatMasukan.FragmentMickrofon;
+import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatKeluaran.ProjectorAct;
 import com.wa.dev.edukasikomputer.R;
 
 public class PerangkatProses extends AppCompatActivity {
@@ -31,84 +29,56 @@ public class PerangkatProses extends AppCompatActivity {
         prosesor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfrag_proses, new FragmentProsesor());
-                ft.commit();
+                Intent a = new Intent(PerangkatProses.this, ProcessorAct.class);
+                startActivity(a);
             }
         });
         motherboard = findViewById(R.id.motherboard);
         motherboard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfrag_proses, new FragmentMotherboard());
-                ft.commit();
+                Intent a = new Intent(PerangkatProses.this, MotherboardAct.class);
+                startActivity(a);
             }
         });
         psu = findViewById(R.id.psu);
         psu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfrag_proses, new FragmentPSU());
-                ft.commit();
+                Intent a = new Intent(PerangkatProses.this, PSU_Act.class);
+                startActivity(a);
             }
         });
         storage = findViewById(R.id.storage);
         storage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfrag_proses, new FragmentStorage());
-                ft.commit();
+                Intent a = new Intent(PerangkatProses.this, Storage_Act.class);
+                startActivity(a);
             }
         });
         vga = findViewById(R.id.vga);
         vga.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfrag_proses, new FragmentVGA());
-                ft.commit();
+                Intent a = new Intent(PerangkatProses.this, VGA_Act.class);
+                startActivity(a);
             }
         });
         ram = findViewById(R.id.ram);
         ram.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfrag_proses, new FragmentRAM());
-                ft.commit();
+                Intent a = new Intent(PerangkatProses.this, RAM_Act.class);
+                startActivity(a);
             }
         });
         rom = findViewById(R.id.rom);
         rom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfrag_proses, new FragmentCDROM());
-                ft.commit();
+                Intent a = new Intent(PerangkatProses.this, CDROMAct.class);
+                startActivity(a);
             }
         });
 
@@ -121,12 +91,5 @@ public class PerangkatProses extends AppCompatActivity {
                 finish();
             }
         });
-    }
-
-    @Override
-    public void onBackPressed() {
-        Intent a = new Intent(PerangkatProses.this, HardwareKomputer.class);
-        startActivity(a);
-        finish();
     }
 }

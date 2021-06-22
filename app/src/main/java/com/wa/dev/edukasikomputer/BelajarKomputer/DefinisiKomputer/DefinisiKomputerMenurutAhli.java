@@ -20,17 +20,17 @@ ImageView kembali;
         kembali.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(DefinisiKomputerMenurutAhli.this, MenuKe2.class);
+                Intent a = new Intent(DefinisiKomputerMenurutAhli.this, DefinisiKomputer.class);
                 startActivity(a);
                 finish();
             }
         });
     }
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        Intent a = new Intent(DefinisiKomputerMenurutAhli.this, MenuKe2.class);
-        startActivity(a);
-        finish();
-    }
+//    @Override
+//    public void onBackPressed() {
+//        super.onBackPressed();
+//        Intent a = new Intent(DefinisiKomputerMenurutAhli.this, MenuKe2.class);
+//        startActivity(a);
+//        finish();
+//    }
 }

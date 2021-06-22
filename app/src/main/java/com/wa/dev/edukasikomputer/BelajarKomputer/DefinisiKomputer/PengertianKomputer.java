@@ -7,23 +7,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.wa.dev.edukasikomputer.MenuKe2;
 import com.wa.dev.edukasikomputer.R;
 
-public class SejarahPenemuanKomputer extends AppCompatActivity {
-    ImageView kembali;
+public class PengertianKomputer extends AppCompatActivity {
+    ImageView uih;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sejarah_penemuan_komputer);
-        kembali=findViewById(R.id.bt_kembali);
-        kembali.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_pengertian_komputer);
+        uih = findViewById(R.id.btn_kembali);
+        uih.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(SejarahPenemuanKomputer.this, DefinisiKomputer.class);
+                Intent a = new Intent(PengertianKomputer.this, DefinisiKomputer.class);
                 startActivity(a);
                 finish();
             }
         });
+
+
     }
 }

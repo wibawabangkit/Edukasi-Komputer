@@ -6,12 +6,29 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_kon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_apk"
         android:supportsRtl="true"
         android:theme="@style/Theme.EdukasiKomputer">
-        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.YTRAM"></activity>
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.VGA_Act"></activity>
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.Storage_Act" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.RAM_Act" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.PSU_Act" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.ProcessorAct" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.MotherboardAct" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.CDROMAct" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.TouchPadAct" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.PenaAct" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.MouseAct" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.MicAct" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.KeyboardAct" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.SpeakerAct" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.ProjectorAct" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.PrinterAct" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatKeluaran.MonitorAct" />
+        <activity android:name=".BelajarKomputer.DefinisiKomputer.PengertianKomputer" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.YTRAM" />
         <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.YTStorage" />
         <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.YTVGA" />
         <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.YTPSU" />

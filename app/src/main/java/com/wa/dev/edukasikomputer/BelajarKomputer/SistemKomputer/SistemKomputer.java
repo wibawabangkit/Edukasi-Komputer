@@ -52,11 +52,4 @@ public class SistemKomputer extends AppCompatActivity {
 
 
     }
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        Intent a = new Intent(SistemKomputer.this, MenuKe2.class);
-        startActivity(a);
-        finish();
-    }
 }

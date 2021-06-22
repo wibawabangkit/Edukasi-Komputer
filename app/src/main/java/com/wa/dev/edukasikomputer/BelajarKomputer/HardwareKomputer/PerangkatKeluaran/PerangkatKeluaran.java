@@ -1,8 +1,6 @@
 package com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatKeluaran;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,12 +10,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.HardwareKomputer;
-import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatMasukan.FragmentKeyboard;
-import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatMasukan.FragmentMickrofon;
-import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatMasukan.FragmentMouse;
-import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatMasukan.FragmentPenaElektronik;
-import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatMasukan.FragmenttTouchpad;
-import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatMasukan.PerangkatMasukan;
 import com.wa.dev.edukasikomputer.R;
 
 public class PerangkatKeluaran extends AppCompatActivity {
@@ -35,48 +27,32 @@ public class PerangkatKeluaran extends AppCompatActivity {
         mic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfragke, new FragmentSpeaker());
-                ft.commit();
+                Intent a = new Intent(PerangkatKeluaran.this, SpeakerAct.class);
+                startActivity(a);
             }
         });
         pena = findViewById(R.id.monitor);
         pena.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfragke, new FragmentMonitor1());
-                ft.commit();
+                Intent a = new Intent(PerangkatKeluaran.this, MonitorAct.class);
+                startActivity(a);
             }
         });
         touch  = findViewById(R.id.printer);
         touch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfragke, new FragmentPrinter1());
-                ft.commit();
+                Intent a = new Intent(PerangkatKeluaran.this, PrinterAct.class);
+                startActivity(a);
             }
         });
         mos = findViewById(R.id.proyektor);
         mos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfragke, new FragmentProjector());
-                ft.commit();
+                Intent a = new Intent(PerangkatKeluaran.this, ProjectorAct.class);
+                startActivity(a);
             }
         });
         kembali = findViewById(R.id.back);
@@ -90,12 +66,5 @@ public class PerangkatKeluaran extends AppCompatActivity {
         });
 
 
-    }
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        Intent a = new Intent(PerangkatKeluaran.this, HardwareKomputer.class);
-        startActivity(a);
-        finish();
     }
 }

@@ -32,7 +32,6 @@ public class DefinisiKomputer extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(DefinisiKomputer.this, SejarahPenemuanKomputer.class);
                 startActivity(a);
-                finish();
             }
         });
         layoutFrag = findViewById(R.id.layout_fragment);
@@ -42,19 +41,14 @@ public class DefinisiKomputer extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(DefinisiKomputer.this, DefinisiKomputerMenurutAhli.class);
                 startActivity(a);
-                finish();
             }
         });
         pengertian = findViewById(R.id.pengertian_komputer);
         pengertian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                relativeLayout.setVisibility(View.GONE);
-                layoutFrag.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layout_fragment, new FragmentPengertian());
-                ft.commit();
+                Intent a = new Intent(DefinisiKomputer.this, DefinisiKomputerMenurutAhli.class);
+                startActivity(a);
             }
         });
         kembali = findViewById(R.id.bakk);
@@ -67,11 +61,5 @@ public class DefinisiKomputer extends AppCompatActivity {
             }
         });
     }
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        Intent a = new Intent(DefinisiKomputer.this, MenuKe2.class);
-        startActivity(a);
-        finish();
-    }
+
 }

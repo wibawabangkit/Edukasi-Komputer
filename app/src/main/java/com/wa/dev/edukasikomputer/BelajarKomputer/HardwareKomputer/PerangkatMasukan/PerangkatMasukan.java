@@ -25,65 +25,45 @@ public class PerangkatMasukan extends AppCompatActivity {
         setContentView(R.layout.activity_perangkat_masukan);
         layutama = findViewById(R.id.layoutawal);
         layopsi = findViewById(R.id.layfrag);
-
         mic = findViewById(R.id.fr_mic);
         mic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfrag, new FragmentMickrofon());
-                ft.commit();
+                Intent a = new Intent(PerangkatMasukan.this, MicAct.class);
+                startActivity(a);
             }
         });
         pena = findViewById(R.id.fr_pena);
         pena.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfrag, new FragmentPenaElektronik());
-                ft.commit();
+                Intent a = new Intent(PerangkatMasukan.this, PenaAct.class);
+                startActivity(a);
+
             }
         });
         touch  = findViewById(R.id.fr_touch);
         touch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfrag, new FragmenttTouchpad());
-                ft.commit();
+                Intent a = new Intent(PerangkatMasukan.this, TouchPadAct.class);
+                startActivity(a);
             }
         });
         mos = findViewById(R.id.fr_mouse);
         mos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfrag, new FragmentMouse());
-                ft.commit();
+                Intent a = new Intent(PerangkatMasukan.this, MouseAct.class);
+                startActivity(a);
             }
         });
         key = findViewById(R.id.fr_keyboard);
         key.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.layfrag, new FragmentKeyboard());
-                ft.commit();
+                Intent a = new Intent(PerangkatMasukan.this, KeyboardAct.class);
+                startActivity(a);
             }
         });
         kembali = findViewById(R.id.kembali);
@@ -97,12 +77,5 @@ public class PerangkatMasukan extends AppCompatActivity {
         });
 
 
-    }
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        Intent a = new Intent(PerangkatMasukan.this, HardwareKomputer.class);
-        startActivity(a);
-        finish();
     }
 }
