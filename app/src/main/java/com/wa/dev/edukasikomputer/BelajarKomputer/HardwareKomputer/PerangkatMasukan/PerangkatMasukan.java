@@ -15,7 +15,7 @@ import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.HardwareKompu
 import com.wa.dev.edukasikomputer.R;
 
 public class PerangkatMasukan extends AppCompatActivity {
-    ImageView kembali, key, mos, touch, pena, mic;
+    ImageView kembali, key, mos, touch, pena, mic, joy;
     RelativeLayout layutama;
     FrameLayout layopsi;
 
@@ -24,7 +24,6 @@ public class PerangkatMasukan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perangkat_masukan);
         layutama = findViewById(R.id.layoutawal);
-        layopsi = findViewById(R.id.layfrag);
         mic = findViewById(R.id.fr_mic);
         mic.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +62,14 @@ public class PerangkatMasukan extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatMasukan.this, KeyboardAct.class);
+                startActivity(a);
+            }
+        });
+        joy = findViewById(R.id.btn_joy);
+        joy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(PerangkatMasukan.this, JoystickAct.class);
                 startActivity(a);
             }
         });

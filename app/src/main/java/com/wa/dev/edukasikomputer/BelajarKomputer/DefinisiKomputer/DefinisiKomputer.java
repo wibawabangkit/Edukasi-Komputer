@@ -1,9 +1,6 @@
 package com.wa.dev.edukasikomputer.BelajarKomputer.DefinisiKomputer;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,8 +9,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import com.wa.dev.edukasikomputer.BelajarKomputer.SistemKomputer.SistemKomputer;
-import com.wa.dev.edukasikomputer.BelajarKomputer.SistemKomputer.SistemKomputerNext1;
 import com.wa.dev.edukasikomputer.MenuKe2;
 import com.wa.dev.edukasikomputer.R;
 
@@ -47,7 +42,7 @@ public class DefinisiKomputer extends AppCompatActivity {
         pengertian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(DefinisiKomputer.this, DefinisiKomputerMenurutAhli.class);
+                Intent a = new Intent(DefinisiKomputer.this, PengertianKomputer.class);
                 startActivity(a);
             }
         });

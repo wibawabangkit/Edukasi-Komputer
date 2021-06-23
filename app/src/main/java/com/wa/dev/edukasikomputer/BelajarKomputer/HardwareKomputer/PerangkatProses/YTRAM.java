@@ -28,7 +28,7 @@ public class YTRAM extends AppCompatActivity {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-        web.loadUrl("https://youtu.be/RBjKFcGcdDQ");
+        web.loadUrl("https://www.youtube.com/embed/RBjKFcGcdDQ");
 
     }
 

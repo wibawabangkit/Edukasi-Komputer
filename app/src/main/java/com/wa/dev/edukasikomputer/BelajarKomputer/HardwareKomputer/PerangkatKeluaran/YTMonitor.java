@@ -28,7 +28,7 @@ public class YTMonitor extends AppCompatActivity {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-        web.loadUrl("https://youtu.be/FxHPlypVyxU");
+        web.loadUrl("https://www.youtube.com/embed/FxHPlypVyxU");
 
     }
 

@@ -102,13 +102,4 @@
         </LinearLayout>
     </LinearLayout>
     </ScrollView>
-    <FrameLayout
-        android:id="@+id/lay_frag_next1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone">
-    </FrameLayout>
-
-
-
 </RelativeLayout>

@@ -29,7 +29,7 @@ public class Yutubquerty extends AppCompatActivity {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-        web.loadUrl("https://youtu.be/39WiYZmH3lM");
+        web.loadUrl("https://www.youtube.com/embed/39WiYZmH3lM");
 
     }
 

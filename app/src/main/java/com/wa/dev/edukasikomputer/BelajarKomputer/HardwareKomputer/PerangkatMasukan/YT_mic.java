@@ -28,7 +28,7 @@ public class YT_mic extends AppCompatActivity {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-        web.loadUrl("https://youtu.be/PPEeEv6RzaY");
+        web.loadUrl("https://www.youtube.com/embed/PPEeEv6RzaY");
 
     }
 

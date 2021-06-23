@@ -28,7 +28,7 @@ public class YTMotherboard extends AppCompatActivity {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-        web.loadUrl("https://youtu.be/7YnPCSgjU6I");
+        web.loadUrl("https://www.youtube.com/embed/7YnPCSgjU6I");
 
     }
 

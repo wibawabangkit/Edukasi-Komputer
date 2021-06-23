@@ -28,7 +28,7 @@ public class YTStorage extends AppCompatActivity {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-        web.loadUrl("https://youtu.be/pe4GQddstig");
+        web.loadUrl("https://www.youtube.com/embed/pe4GQddstig");
 
     }
 

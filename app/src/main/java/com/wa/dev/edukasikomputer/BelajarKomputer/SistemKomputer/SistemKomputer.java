@@ -20,23 +20,17 @@ public class SistemKomputer extends AppCompatActivity {
     ImageView uih;
     TextView next;
     ScrollView layutama;
-    FrameLayout layopsi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sistem_komputer);
-        layopsi = findViewById(R.id.lay_frag_next1);
         layutama = findViewById(R.id.lay_satu);
         next = findViewById(R.id.tv_next);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layutama.setVisibility(View.GONE);
-                layopsi.setVisibility(View.VISIBLE);
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.lay_frag_next1, new SistemKomputerNext1());
-                ft.commit();
+                Intent a = new Intent(SistemKomputer.this, NextSistemKomputer.class);
+                startActivity(a);
             }
         });
         uih = findViewById(R.id.btn_uih);

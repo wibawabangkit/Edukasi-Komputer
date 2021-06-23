@@ -51,6 +51,12 @@
             android:layout_height="wrap_content"
             android:src="@drawable/btn_mic"
             android:layout_marginTop="10dp"/>
+        <ImageView
+            android:id="@+id/btn_joy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menujoy"
+            android:layout_marginTop="10dp"/>
     </LinearLayout>
     <ImageView
         android:id="@+id/kembali"
@@ -62,10 +68,4 @@
         android:layout_height="wrap_content"
         android:src="@drawable/btn_kembali"/>
     </RelativeLayout>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/layfrag"
-        android:visibility="gone"/>
-
 </RelativeLayout>

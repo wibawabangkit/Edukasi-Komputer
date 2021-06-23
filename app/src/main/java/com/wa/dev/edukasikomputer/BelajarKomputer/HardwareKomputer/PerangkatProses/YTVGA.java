@@ -28,7 +28,7 @@ public class YTVGA extends AppCompatActivity {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-        web.loadUrl("https://youtu.be/BI9d1s76R6c");
+        web.loadUrl("https://www.youtube.com/embed/BI9d1s76R6c");
 
     }
 

@@ -2,7 +2,6 @@ package com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatMas
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.webkit.WebView;
@@ -10,18 +9,16 @@ import android.webkit.WebViewClient;
 
 import com.wa.dev.edukasikomputer.R;
 
-public class TouchYoutube extends AppCompatActivity {
+public class YtJoystick extends AppCompatActivity {
 
-    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_touch_youtube);
-        WebView web=(WebView)findViewById(R.id.key_touch);
+        setContentView(R.layout.activity_yt_joystick);
+        WebView web=(WebView)findViewById(R.id.keyjoy);
         web.getSettings().setJavaScriptEnabled(true);
 
         web.setWebViewClient(new WebViewClient(){
-
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
 
@@ -29,7 +26,7 @@ public class TouchYoutube extends AppCompatActivity {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-        web.loadUrl("https://www.youtube.com/embed/1gF4bI_3fCA");
+        web.loadUrl("https://www.youtube.com/embed/3kSeXnlGxro");
 
     }
 
@@ -43,4 +40,4 @@ public class TouchYoutube extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-}
+    }

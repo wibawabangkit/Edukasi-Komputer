@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_apk"
         android:supportsRtl="true"
         android:theme="@style/Theme.EdukasiKomputer">
-        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.VGA_Act"></activity>
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.YtJoystick"></activity>
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatMasukan.JoystickAct" />
+        <activity android:name=".BelajarKomputer.SistemKomputer.NextSistemKomputer" />
+        <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.VGA_Act" />
         <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.Storage_Act" />
         <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.RAM_Act" />
         <activity android:name=".BelajarKomputer.HardwareKomputer.PerangkatProses.PSU_Act" />

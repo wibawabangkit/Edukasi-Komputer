@@ -28,7 +28,7 @@ public class YTPSU extends AppCompatActivity {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-        web.loadUrl("https://youtu.be/xmLm-EhtM2wc");
+        web.loadUrl("https://www.youtube.com/embed/xmLm-EhtM2w");
 
     }
 

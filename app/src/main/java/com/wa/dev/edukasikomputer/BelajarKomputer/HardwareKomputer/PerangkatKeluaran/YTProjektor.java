@@ -28,7 +28,7 @@ public class YTProjektor extends AppCompatActivity {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-        web.loadUrl("https://youtu.be/cyOHVmYKYfU");
+        web.loadUrl("https://www.youtube.com/embed/cyOHVmYKYfU");
 
     }
 

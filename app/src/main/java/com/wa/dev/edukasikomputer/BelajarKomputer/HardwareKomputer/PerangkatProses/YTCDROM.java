@@ -28,7 +28,7 @@ public class YTCDROM extends AppCompatActivity {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-        web.loadUrl("https://youtu.be/Iw8HYQnFPlg");
+        web.loadUrl("https://www.youtube.com/embed/Iw8HYQnFPlg");
 
     }
 

@@ -29,7 +29,7 @@ public class YoutubeMouse extends AppCompatActivity {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-        web.loadUrl("https://youtu.be/aBSrF0_RTas");
+        web.loadUrl("https://www.youtube.com/embed/aBSrF0_RTas");
 
     }
 

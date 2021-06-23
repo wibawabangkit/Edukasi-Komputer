@@ -28,7 +28,7 @@ public class YTPrinter extends AppCompatActivity {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-        web.loadUrl("https://youtu.be/kFQs1sVCyX8");
+        web.loadUrl("https://www.youtube.com/embed/kFQs1sVCyX8");
 
     }
 

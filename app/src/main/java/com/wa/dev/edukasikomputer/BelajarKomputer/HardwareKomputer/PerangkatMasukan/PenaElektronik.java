@@ -29,7 +29,7 @@ public class PenaElektronik extends AppCompatActivity {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-        web.loadUrl("https://youtu.be/rxu0TJPZn5k");
+        web.loadUrl("https://www.youtube.com/embed/rxu0TJPZn5k");
 
     }
 

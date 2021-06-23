@@ -28,7 +28,7 @@ public class YTSpeaker extends AppCompatActivity {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-        web.loadUrl("https://youtu.be/a-gv_38ZLYA");
+        web.loadUrl("https://www.youtube.com/embed/a-gv_38ZLYA");
 
     }
 
