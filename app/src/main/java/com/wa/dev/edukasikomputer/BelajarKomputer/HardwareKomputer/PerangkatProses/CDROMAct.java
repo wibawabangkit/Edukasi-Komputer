@@ -29,7 +29,7 @@ public class CDROMAct extends AppCompatActivity {
         yt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(CDROMAct.this, YTVGA.class);
+                Intent a = new Intent(CDROMAct.this, YTCDROM.class);
                 startActivity(a);
             }
         });
