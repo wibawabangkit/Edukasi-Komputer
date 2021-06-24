@@ -21,6 +21,7 @@ ImageView ayo, about,  keluarr;
             public void onClick(View v) {
                 Intent a = new Intent(MainActivity.this, MenuKe2.class);
                 startActivity(a);
+                finish();
             }
         });
         keluarr = findViewById(R.id.exit);
@@ -79,5 +80,6 @@ ImageView ayo, about,  keluarr;
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        finish();
     }
 }

@@ -32,7 +32,15 @@ public class MicAct extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(MicAct.this, YT_mic.class);
                 startActivity(a);
+                finish();
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(MicAct.this, PerangkatMasukan.class);
+        startActivity(a);
+        finish();
     }
 }

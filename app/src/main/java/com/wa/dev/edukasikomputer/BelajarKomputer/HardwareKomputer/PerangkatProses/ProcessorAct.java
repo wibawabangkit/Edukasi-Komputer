@@ -31,7 +31,16 @@ public class ProcessorAct extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(ProcessorAct.this, YTProsesor.class);
                 startActivity(a);
+                finish();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(ProcessorAct.this, PerangkatProses.class);
+        startActivity(a);
+        finish();
     }
 }

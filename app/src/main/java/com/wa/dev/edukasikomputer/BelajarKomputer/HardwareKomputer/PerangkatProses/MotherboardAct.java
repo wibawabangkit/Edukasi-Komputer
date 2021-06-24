@@ -34,4 +34,12 @@ public class MotherboardAct extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(MotherboardAct.this, PerangkatProses.class);
+        startActivity(a);
+        finish();
+    }
 }

@@ -33,8 +33,16 @@ public class SpeakerAct extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(SpeakerAct.this, YTSpeaker.class);
                 startActivity(a);
+                finish();
             }
         });
 
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(SpeakerAct.this, PerangkatKeluaran.class);
+        startActivity(a);
+        finish();
     }
 }

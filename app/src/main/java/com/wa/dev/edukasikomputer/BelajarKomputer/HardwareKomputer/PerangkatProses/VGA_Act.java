@@ -31,7 +31,16 @@ public class VGA_Act extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(VGA_Act.this, YTVGA.class);
                 startActivity(a);
+                finish();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(VGA_Act.this, HardwareKomputer.class);
+        startActivity(a);
+        finish();
     }
 }

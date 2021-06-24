@@ -22,7 +22,7 @@ public class PSU_Act extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PSU_Act.this, PerangkatProses.class);
                 startActivity(a);
-               finish();
+                finish();
             }
         });
         yt = findViewById(R.id.vid_psu);
@@ -31,7 +31,16 @@ public class PSU_Act extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PSU_Act.this, YTPSU.class);
                 startActivity(a);
+                finish();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(PSU_Act.this, PerangkatProses.class);
+        startActivity(a);
+        finish();
     }
 }

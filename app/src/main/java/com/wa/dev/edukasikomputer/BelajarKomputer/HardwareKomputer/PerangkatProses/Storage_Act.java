@@ -31,7 +31,16 @@ public class Storage_Act extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(Storage_Act.this, YTStorage.class);
                 startActivity(a);
+                finish();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(Storage_Act.this, PerangkatProses.class);
+        startActivity(a);
+        finish();
     }
 }

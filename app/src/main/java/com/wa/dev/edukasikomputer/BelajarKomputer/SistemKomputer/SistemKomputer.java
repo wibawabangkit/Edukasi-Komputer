@@ -31,6 +31,7 @@ public class SistemKomputer extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(SistemKomputer.this, NextSistemKomputer.class);
                 startActivity(a);
+                finish();
             }
         });
         uih = findViewById(R.id.btn_uih);
@@ -42,8 +43,13 @@ public class SistemKomputer extends AppCompatActivity {
                 finish();
             }
         });
+    }
 
-
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(SistemKomputer.this, MenuKe2.class);
+        startActivity(a);
+        finish();
     }
 }

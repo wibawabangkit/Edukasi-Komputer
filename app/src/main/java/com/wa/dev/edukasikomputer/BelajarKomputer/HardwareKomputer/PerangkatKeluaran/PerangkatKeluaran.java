@@ -29,6 +29,7 @@ public class PerangkatKeluaran extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatKeluaran.this, SpeakerAct.class);
                 startActivity(a);
+                finish();
             }
         });
         pena = findViewById(R.id.monitor);
@@ -37,6 +38,7 @@ public class PerangkatKeluaran extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatKeluaran.this, MonitorAct.class);
                 startActivity(a);
+                finish();
             }
         });
         touch  = findViewById(R.id.printer);
@@ -45,6 +47,7 @@ public class PerangkatKeluaran extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatKeluaran.this, PrinterAct.class);
                 startActivity(a);
+                finish();
             }
         });
         mos = findViewById(R.id.proyektor);
@@ -53,6 +56,7 @@ public class PerangkatKeluaran extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatKeluaran.this, ProjectorAct.class);
                 startActivity(a);
+                finish();
             }
         });
         kembali = findViewById(R.id.back);
@@ -66,5 +70,12 @@ public class PerangkatKeluaran extends AppCompatActivity {
         });
 
 
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(PerangkatKeluaran.this, HardwareKomputer.class);
+        startActivity(a);
+        finish();
     }
 }

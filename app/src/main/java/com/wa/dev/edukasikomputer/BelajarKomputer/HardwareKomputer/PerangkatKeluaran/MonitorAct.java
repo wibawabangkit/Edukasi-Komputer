@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.wa.dev.edukasikomputer.BelajarKomputer.DefinisiKomputer.DefinisiKomputer;
+import com.wa.dev.edukasikomputer.BelajarKomputer.DefinisiKomputer.SejarahPenemuanKomputer;
 import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.HardwareKomputer;
 import com.wa.dev.edukasikomputer.R;
 
@@ -32,7 +34,15 @@ public class MonitorAct extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(MonitorAct.this, YTMonitor.class);
                 startActivity(a);
+                finish();
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(MonitorAct.this, PerangkatKeluaran.class);
+        startActivity(a);
+        finish();
     }
 }

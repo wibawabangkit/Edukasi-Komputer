@@ -31,7 +31,15 @@ ImageView btn, yt;
             public void onClick(View v) {
                 Intent a = new Intent(PrinterAct.this, YTPrinter.class);
                 startActivity(a);
+                finish();
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(PrinterAct.this, PerangkatKeluaran.class);
+        startActivity(a);
+        finish();
     }
 }

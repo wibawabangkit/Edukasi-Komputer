@@ -24,7 +24,12 @@ public class PengertianKomputer extends AppCompatActivity {
                 finish();
             }
         });
-
-
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(PengertianKomputer.this, DefinisiKomputer.class);
+        startActivity(a);
+        finish();
     }
 }

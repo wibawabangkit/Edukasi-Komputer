@@ -31,7 +31,15 @@ public class KeyboardAct extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(KeyboardAct.this, Yutubquerty.class);
                 startActivity(a);
+                finish();
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(KeyboardAct.this, PerangkatMasukan.class);
+        startActivity(a);
+        finish();
     }
 }

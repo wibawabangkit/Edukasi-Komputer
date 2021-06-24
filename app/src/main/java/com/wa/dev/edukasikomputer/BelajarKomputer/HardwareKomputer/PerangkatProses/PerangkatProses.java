@@ -31,6 +31,7 @@ public class PerangkatProses extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatProses.this, ProcessorAct.class);
                 startActivity(a);
+                finish();
             }
         });
         motherboard = findViewById(R.id.motherboard);
@@ -39,6 +40,7 @@ public class PerangkatProses extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatProses.this, MotherboardAct.class);
                 startActivity(a);
+                finish();
             }
         });
         psu = findViewById(R.id.psu);
@@ -47,6 +49,7 @@ public class PerangkatProses extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatProses.this, PSU_Act.class);
                 startActivity(a);
+                finish();
             }
         });
         storage = findViewById(R.id.storage);
@@ -55,6 +58,7 @@ public class PerangkatProses extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatProses.this, Storage_Act.class);
                 startActivity(a);
+                finish();
             }
         });
         vga = findViewById(R.id.vga);
@@ -63,6 +67,7 @@ public class PerangkatProses extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatProses.this, VGA_Act.class);
                 startActivity(a);
+                finish();
             }
         });
         ram = findViewById(R.id.ram);
@@ -71,6 +76,7 @@ public class PerangkatProses extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatProses.this, RAM_Act.class);
                 startActivity(a);
+                finish();
             }
         });
         rom = findViewById(R.id.rom);
@@ -79,6 +85,7 @@ public class PerangkatProses extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatProses.this, CDROMAct.class);
                 startActivity(a);
+                finish();
             }
         });
 
@@ -91,5 +98,13 @@ public class PerangkatProses extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(PerangkatProses.this, HardwareKomputer.class);
+        startActivity(a);
+        finish();
     }
 }

@@ -32,8 +32,17 @@ public class TouchPadAct extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(TouchPadAct.this, TouchYoutube.class);
                 startActivity(a);
+                finish();
             }
         });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(TouchPadAct.this, PerangkatMasukan.class);
+        startActivity(a);
+        finish();
     }
 }

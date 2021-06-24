@@ -32,7 +32,16 @@ public class PenaAct extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PenaAct.this, PenaElektronik.class);
                 startActivity(a);
+                finish();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(PenaAct.this, PerangkatMasukan.class);
+        startActivity(a);
+        finish();
     }
 }

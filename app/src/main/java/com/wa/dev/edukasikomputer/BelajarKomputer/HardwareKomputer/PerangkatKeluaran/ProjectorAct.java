@@ -31,7 +31,15 @@ public class ProjectorAct extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(ProjectorAct.this, YTProjektor.class);
                 startActivity(a);
+                finish();
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(ProjectorAct.this, PerangkatKeluaran.class);
+        startActivity(a);
+        finish();
     }
 }

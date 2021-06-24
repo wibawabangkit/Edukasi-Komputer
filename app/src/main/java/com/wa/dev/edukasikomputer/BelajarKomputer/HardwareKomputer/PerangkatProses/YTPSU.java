@@ -3,6 +3,7 @@ package com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatPro
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.webkit.WebView;
@@ -34,12 +35,10 @@ public class YTPSU extends AppCompatActivity {
 
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // handle arrow click here
-        if (item.getItemId() == android.R.id.home) {
-            finish(); // close this activity and return to preview activity (if there is any)
-        }
-
-        return super.onOptionsItemSelected(item);
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(YTPSU.this, PSU_Act.class);
+        startActivity(a);
+        finish();
     }
 }

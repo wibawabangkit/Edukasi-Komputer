@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatKeluaran.PerangkatKeluaran;
+import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatKeluaran.SpeakerAct;
 import com.wa.dev.edukasikomputer.R;
 
 public class JoystickAct extends AppCompatActivity {
@@ -31,7 +33,15 @@ ImageView btn, yt;
             public void onClick(View v) {
                 Intent a = new Intent(JoystickAct.this, YtJoystick.class);
                 startActivity(a);
+                finish();
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(JoystickAct.this, PerangkatMasukan.class);
+        startActivity(a);
+        finish();
     }
 }

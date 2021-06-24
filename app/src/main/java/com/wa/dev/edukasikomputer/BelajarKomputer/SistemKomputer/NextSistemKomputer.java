@@ -26,4 +26,12 @@ TextView uih;
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(NextSistemKomputer.this, SistemKomputer.class);
+        startActivity(a);
+        finish();
+    }
 }

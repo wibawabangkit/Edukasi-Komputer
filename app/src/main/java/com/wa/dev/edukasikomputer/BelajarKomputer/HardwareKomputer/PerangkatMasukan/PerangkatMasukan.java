@@ -30,6 +30,7 @@ public class PerangkatMasukan extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatMasukan.this, MicAct.class);
                 startActivity(a);
+                finish();
             }
         });
         pena = findViewById(R.id.fr_pena);
@@ -38,7 +39,7 @@ public class PerangkatMasukan extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatMasukan.this, PenaAct.class);
                 startActivity(a);
-
+                finish();
             }
         });
         touch  = findViewById(R.id.fr_touch);
@@ -47,6 +48,7 @@ public class PerangkatMasukan extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatMasukan.this, TouchPadAct.class);
                 startActivity(a);
+                finish();
             }
         });
         mos = findViewById(R.id.fr_mouse);
@@ -55,6 +57,7 @@ public class PerangkatMasukan extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatMasukan.this, MouseAct.class);
                 startActivity(a);
+                finish();
             }
         });
         key = findViewById(R.id.fr_keyboard);
@@ -63,6 +66,7 @@ public class PerangkatMasukan extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatMasukan.this, KeyboardAct.class);
                 startActivity(a);
+                finish();
             }
         });
         joy = findViewById(R.id.btn_joy);
@@ -71,6 +75,7 @@ public class PerangkatMasukan extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(PerangkatMasukan.this, JoystickAct.class);
                 startActivity(a);
+                finish();
             }
         });
         kembali = findViewById(R.id.kembali);
@@ -82,7 +87,13 @@ public class PerangkatMasukan extends AppCompatActivity {
                 finish();
             }
         });
+    }
 
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(PerangkatMasukan.this, HardwareKomputer.class);
+        startActivity(a);
+        finish();
     }
 }

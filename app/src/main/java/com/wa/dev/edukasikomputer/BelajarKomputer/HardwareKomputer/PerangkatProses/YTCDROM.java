@@ -3,11 +3,13 @@ package com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.PerangkatPro
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import com.wa.dev.edukasikomputer.BelajarKomputer.HardwareKomputer.HardwareKomputer;
 import com.wa.dev.edukasikomputer.R;
 
 public class YTCDROM extends AppCompatActivity {
@@ -34,12 +36,10 @@ public class YTCDROM extends AppCompatActivity {
 
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // handle arrow click here
-        if (item.getItemId() == android.R.id.home) {
-            finish(); // close this activity and return to preview activity (if there is any)
-        }
-
-        return super.onOptionsItemSelected(item);
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(YTCDROM.this, CDROMAct.class);
+        startActivity(a);
+        finish();
     }
 }

@@ -23,6 +23,7 @@ ImageView definisikomputer, hardware, kembali, sistemkomputer;
             public void onClick(View v) {
                 Intent a = new Intent(MenuKe2.this, SistemKomputer.class);
                 startActivity(a);
+                finish();
             }
         });
     definisikomputer = findViewById(R.id.definisi_komputer);
@@ -31,6 +32,7 @@ ImageView definisikomputer, hardware, kembali, sistemkomputer;
         public void onClick(View v) {
             Intent a = new Intent(MenuKe2.this, DefinisiKomputer.class);
             startActivity(a);
+            finish();
         }
     });
     hardware = findViewById(R.id.hardware_komputer);
@@ -39,6 +41,7 @@ ImageView definisikomputer, hardware, kembali, sistemkomputer;
         public void onClick(View v) {
             Intent a = new Intent(MenuKe2.this, HardwareKomputer.class);
             startActivity(a);
+            finish();
         }
     });
     kembali = findViewById(R.id.backMenu);
@@ -53,5 +56,11 @@ ImageView definisikomputer, hardware, kembali, sistemkomputer;
 
     }
 
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent a = new Intent(MenuKe2.this, MainActivity.class);
+        startActivity(a);
+        finish();
+    }
 }
